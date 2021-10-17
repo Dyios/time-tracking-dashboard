@@ -19,7 +19,7 @@ function DashboardElement({ type, data }) {
                 </div>
                 <div className="hrs-container">
                     <div className="data" >
-                        <CountUp end={data.current} duration={1} /> hrs
+                        <CountUp end={data.current} duration={1} />hrs
                     </div>
                     <div className="previousData" >
                         Last Week - {data.previous}hrs
