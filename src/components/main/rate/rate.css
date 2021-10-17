@@ -1,0 +1,27 @@
+.rate-container{
+    padding: calc(var(--padding) - 2px);
+    color: hsl(235, 45%, 61%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rate-container > div:hover {
+    color: hsl(0, 0%, 90%);
+    cursor: pointer;
+}
+
+.selected {
+    color: hsl(0, 0%, 90%);
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .rate-container{
+        flex-direction: column;
+    }
+
+    .rate-container > div:not(:last-child){
+        margin-bottom: 0.8rem;
+    }
+}

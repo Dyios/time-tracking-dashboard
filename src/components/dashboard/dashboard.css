@@ -1,0 +1,13 @@
+.dashboardContainer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 1.5rem;
+    width: 100%;
+    max-width: 1440px;
+}
+
+@media (min-width: 768px){
+    .dashboardContainer {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
